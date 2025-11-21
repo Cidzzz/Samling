@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samling | Aktivitas Truk</title>
+
+    <!-- Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/59135e8829.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/aktivitas.css">
+    <script src="javascript/theme-loader.js"></script>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #fbfbfb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-slate-900">
+
+    <div class="container-page pb-24"> 
+        <!-- Header -->
+        <header class="flex items-center justify-between mb-6">
+            <button class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 shadow-sm text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-slate-700 transition flex items-center justify-center" onclick="window.location.href='beranda.html'">
+                 <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div class="text-center">
+                <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Aktivitas & Riwayat</h1>
+                <p class="text-sm text-gray-400">Status Keberangkatan Truk Sampah</p>
+            </div>
+            <div class="w-10 h-10"></div> <!-- Placeholder for alignment -->
+        </header>
+
+        <!-- Main Content -->
+        <main class="space-y-8" id="activity-container">
+            <!-- Data akan dirender oleh JavaScript -->
+        </main>
+    </div>
+
+    <!-- Bottom Navbar -->
+    <main class="navbar-bottom fixed bottom-0 left-0 w-full bg-white dark:bg-slate-800 shadow flex justify-around items-center py-2">
+        <a href="beranda.html" class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-400">
+            <i class="fa-solid fa-home text-xl"></i>
+            <span class="text-xs">Beranda</span>
+        </a>
+        <a href="aktivitas.html" class="flex flex-col items-center gap-1 text-green-600 dark:text-green-500">
+            <i class="fa-solid fa-chart-line text-xl"></i>
+            <span class="text-xs font-semibold">Aktivitas</span>
+        </a>
+        <a href="patners.html" class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-400">
+            <i class="fa-solid fa-handshake text-xl"></i>
+            <span class="text-xs">Partner</span>
+        </a>
+        <a href="akun.html" class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-400">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="text-xs">Akun</span>
+        </a>
+    </main>
+
+<script src="javascript/partner_data.js"></script>
+<script src="javascript/truck_data.js"></script>
+<script src="javascript/aktivitas.js"></script>
+<script src="javascript/global.js"></script>
+<script src="javascript/theme.js"></script>
+
+</body>
+</html>
